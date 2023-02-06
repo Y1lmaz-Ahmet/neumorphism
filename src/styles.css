@@ -1,0 +1,100 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  display: flex;
+  height: auto;
+  width: 100%;
+  background: #dde1e7;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.squares {
+  display: flex;
+}
+.square {
+  width: 150px;
+  height: 150px;
+  background: #dde1e7;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.444);
+  border-radius: 16px;
+  margin: 15px;
+}
+.square-inset {
+  width: 150px;
+  height: 150px;
+  background: #dde1e7;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.444);
+  border-radius: 16px;
+  margin: 15px;
+}
+.circles {
+  display: flex;
+  margin: 15px;
+}
+.circle {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  background: #dde1e7;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.444);
+  border-radius: 50%;
+  margin: 15px;
+  position: relative;
+}
+
+.circle:after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  height: 80%;
+  width: 80%;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.444);
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  background: linear-gradient(145deg, #fff7f7, #dbd0d0);
+  height: 500px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.square-test {
+  height: 150px;
+  width: 150px;
+  border-radius: 98px;
+  background: linear-gradient(145deg, #fff7f7, #dbd0d0);
+  box-shadow: 5px 5px 6px #beb4b4, -5px -5px 6px #ffffff;
+}
+
+.test-red {
+  height: 500px;
+  width: 100%;
+  background-color: #cc1919;
+  justify-content: center;
+
+  display: flex;
+}
+.test-red-square {
+  margin-top: 6px;
+  height: 125px;
+  width: 95%;
+  border-radius: 16px;
+  background: #cc1919;
+  box-shadow: inset 5px -5px 6px #9f1414, inset -5px 5px 6px #f91f1f;
+}
